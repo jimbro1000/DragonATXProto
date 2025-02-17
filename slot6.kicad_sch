@@ -8184,10 +8184,6 @@
 			)
 		)
 	)
-	(no_connect
-		(at 113.03 72.39)
-		(uuid "56851fa6-d081-45f9-9865-800053380e01")
-	)
 	(global_label "Z18"
 		(shape bidirectional)
 		(at 113.03 146.05 0)
@@ -8377,6 +8373,28 @@
 		(uuid "1834f67e-3366-4992-86c0-25ca3a1742ad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 95.0845 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCLK"
+		(shape bidirectional)
+		(at 100.33 143.51 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18f04182-bd7d-4361-91c8-1ef485bbb825")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.5768 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8817,6 +8835,28 @@
 		(uuid "45da4469-4252-42d9-8f0b-98b78e6af4f9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 124.9885 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ESND"
+		(shape bidirectional)
+		(at 113.03 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "485848ba-b242-4ff2-bacf-ddde5f7cd7e7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 120.9742 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9598,22 +9638,22 @@
 	)
 	(global_label "Chroma"
 		(shape bidirectional)
-		(at 113.03 52.07 0)
+		(at 100.33 52.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "a323af6e-2e52-46ee-a014-2ff340593ee6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.323 52.07 0)
+			(at 89.037 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -9862,22 +9902,22 @@
 	)
 	(global_label "AD1"
 		(shape bidirectional)
-		(at 113.03 54.61 0)
+		(at 100.33 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "c2d332da-6516-4bdf-af00-d18a39e3cd42")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.6946 54.61 0)
+			(at 92.6654 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -10060,22 +10100,22 @@
 	)
 	(global_label "Luma"
 		(shape bidirectional)
-		(at 100.33 52.07 180)
+		(at 113.03 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "ce92ce21-657a-4486-affe-7276f9ca47a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.2141 52.07 0)
+			(at 122.1459 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -11045,7 +11085,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 54.61 270)
+		(at 113.03 54.61 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11054,7 +11095,7 @@
 		(fields_autoplaced yes)
 		(uuid "b10ffe49-7551-452a-89c4-e086b8e4d5c1")
 		(property "Reference" "#PWR040"
-			(at 93.98 54.61 0)
+			(at 119.38 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11063,7 +11104,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 96.52 54.6099 90)
+			(at 116.84 54.6099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11072,7 +11113,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 54.61 0)
+			(at 113.03 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11081,7 +11122,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 54.61 0)
+			(at 113.03 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11090,7 +11131,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 54.61 0)
+			(at 113.03 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)

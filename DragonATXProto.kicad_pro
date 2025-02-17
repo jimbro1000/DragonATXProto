@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [],
@@ -630,6 +630,10 @@
     [
       "081e14a7-d8a0-4201-b85f-f46291d2f6a0",
       "reset"
+    ],
+    [
+      "69a240a8-2cf4-4891-85bd-9753f499bc6e",
+      "fpga"
     ]
   ],
   "text_variables": {}

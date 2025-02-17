@@ -1672,7 +1672,7 @@
 		)
 	)
 	(global_label "ESND"
-		(shape input)
+		(shape output)
 		(at 147.32 88.9 0)
 		(fields_autoplaced yes)
 		(effects
