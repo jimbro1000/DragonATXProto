@@ -3551,17 +3551,16 @@
 		)
 		(uuid "fae8d9a1-eaa5-4212-b7be-a77d3fe0e552")
 	)
-	(text_box "Dragon pin usage 164 total, 26 unavailable - 138 usable\n\n+5V\n(1)\n\nSignals to ship\nCPU\nQ, E, ~{RES}, R/~{W} (E & Q already counted for)\nNMI, IRQ, FIRQ \n~{HALT}, ~{LIC}, TSC, BS, BA, AVMA, BUSY\n(12)\nD[0..7], A[0..15]\n(24)\n(total 36)\n\nSAM\nNMIp, IRQp, FIRQp\n(3)\nDLV[0..7], Z[0..21]\n(30)\nDA0,\nS[0..4]\n(6)\nP0a-P0h, P1a-P1h, P2\n(17)\nR[0..2]\n(3)\nVCLK,\n~{HS}, ~{FS}, ~{WE}, ~{RAS}, ~{CAS}\n~{CPUREAD}, ~{CPUWRITE}\n(8)\n(total 67)\n\nAUDIO\nL, R, M\n(total 3)\n\nKeyboard\nPA[0..7], PB[0..7]\n(total 16)\n\nJoystick\nX1,X2,X3,X4\n(total 4)\n\nVideo\nCSS, A/G, GM0, GM1, GM2\n(total 5)\n\nOdd\nCART\n\nGrand total 133/138 signals\nLess 20 if PIA buses are isolated"
+	(text_box "ROM usage\n\nThe basic design of the machine will utilise the original 1x16KB or 2x8KB ROM image but the goal is to switch to high performance, low voltage flash ROM. \nThis comes in capacities much higher than EPROM which offers an opportunity to program ROM images in system using 256byte pages which fits very nicely with block sizes used in floppy disks.\nOne of the experiments is to provide a virtual (ROM) disk to accelerate startup. The remaining ROM capacity will be paged alongside RAM, further accelerating startup for DOS based operation\n\nIn order to write to a flash rom an additional WE signal is required, the proposal is to utilise the R0 and R1 select signals for this purpose. R0 is CE and R1 is R/~{W}"
 		(exclude_from_sim no)
-		(at 233.68 48.26 0)
-		(size 48.26 115.57)
+		(at 185.42 76.2 0)
+		(size 48.26 44.45)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(fill
-			(type color)
-			(color 185 255 112 1)
+			(type none)
 		)
 		(effects
 			(font
@@ -3569,19 +3568,18 @@
 			)
 			(justify left top)
 		)
-		(uuid "0d0a140e-f80f-4c65-a304-6a4e2ba84c7b")
+		(uuid "6d1f0909-7442-4c31-88ef-9ff991104b21")
 	)
-	(text_box "Expected Cards\n\nCPU/SAM\n\nRAM/ROM\n\nPIA 0 / PIA 1 (keyboard, parallel, joysticks, cassette, default audio)\n\nVIDEO\n\nCART (could be selected bus connections on cable)\n\nmin 4, max 7 slots"
+	(text_box "FPGA integration\n\nWhile the base concept is to provide all of the wiring to all of the backplane slots, a set of connections is provided on the main board to allow an FPGA carrier to be mounted, pre-empting a situation where an additional slot would be required.\nThe expectation is that the CPU card would also be the SAM card but if the FPGA is used this may result in a need for the two to be separated at which point the system may run out of slots.\n\nThe selected FPGA board includes 32MB of DDR RAM - enough to satisfy all RAM requirements for the proposed final solution spec. The FPGA chip itself includes enough block RAM to cache both the memory block map and the allocated blocks for any single task. This should mitigate the poor single byte access speed of DDR and remove the need for a separate pair of map management time slots in the RAM access cycle"
 		(exclude_from_sim no)
 		(at 185.42 13.97 0)
-		(size 48.26 34.29)
+		(size 48.26 59.69)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(fill
-			(type color)
-			(color 255 249 138 1)
+			(type none)
 		)
 		(effects
 			(font
@@ -3589,12 +3587,12 @@
 			)
 			(justify left top)
 		)
-		(uuid "1850acc1-8117-4adf-ac37-0bbf571f9078")
+		(uuid "8120b91f-9c4f-4aee-94b5-cb3f940dbf1b")
 	)
-	(text_box "Custom specification\n\nPower\n12V, 5V, 3.3V, 0V, -5V, -12V (6) multiple gnd preferred\n\nCPU\nQ, E, ~{RES}, R/~{W}, ~{NMI}, ~{FIRQ}, ~{IRQ}\n~{HALT}, ~{LIC}, TSC, BS, BA, AVMA, BUSY\nD[0..7], A[0..15] (38)\n\nSAM\nNMIp, FIRQp, IRQp, DA0, VLCK\n~{HS}, ~{FS}, ~{WE}, ~{RAS}, ~{CAS}\n~{CPURD}, ~{CPUWR}, S[0..4] (S0-2 is regular 3-4 are slave of A0-1 for disambig)\nP2, R[0..2] \nDLV[0..7], Z[0..21] (51)\n\nAudio\nL, R, M (3)\n\nKeyboard\nPA[0..7], PB[0..7] (16)\n\nJoystick\nX[1..4] (4)\n\nVideo\nCSS, A/G, GM[0..2] (5)\n\nCART (1)\n\nTotal 125 pins\n\nUse 86p + 60p slots - provides 146 pins\nsee https://www.aliexpress.com/\nitem/1005005974154410.html\n\nMax is 86p + 24p - (110 pins)\nAbandon kbd + joystick + cassette + parallel breakout"
+	(text_box "Custom Slot Specification\n\nPower\n12V, 5V, 3.3V, 0V, -5V, -12V (6)\n\nCPU\nQ, E, ~{RES}, R/~{W}, ~{NMI}, ~{FIRQ}, ~{IRQ}\n~{HALT}, ~{LIC}, TSC, BS, BA, AVMA, BUSY\nD[0..7], A[0..15] (38)\n\nSAM\nNMIp, FIRQp, IRQp, DA0, VLCK\n~{HS}, ~{FS}, ~{WE}, ~{RAS}, ~{CAS}\nS[0..4] (S0-2 are regular S3-4 are slave of A0-1 for disambiguation)\nP2, R[0..2] \nDLV[0..7], Z[0..21] (49)\n\nAudio\nL, R, M (3)\n\nVideo\nCSS, A/G, GM[0..2] (5)\nComposite, Luma, Chroma (3)\n\nCART, EXTMEN, ESND (3)"
 		(exclude_from_sim no)
-		(at 185.42 48.26 0)
-		(size 48.26 115.57)
+		(at 234.95 13.97 0)
+		(size 48.26 59.69)
 		(stroke
 			(width 0)
 			(type default)
@@ -3610,10 +3608,10 @@
 		)
 		(uuid "c244d243-3293-41bc-8119-2036c76ea123")
 	)
-	(text_box "PCI Express pin designation\n\nA1 = ~{PRSNT1}\nB17,B31,B48,B81 = ~{PRSNT2}\nB8,A5,A6,A7,A8 = JTAG(1..5)\nB5 = SMCLK\nB6 = SMDAT\nB11 = ~{WAKE}\nA11 = ~{PERST}\nA13 = REFCLK+ = E\nA14 = REFCLK- = Q\n\n6 reserved, 4 power\n\n(note cheating on last pair but low speed compared with expectation)"
+	(text_box "Concept\n\nProvide enough connections on backplane bus to permit operation of system regardless of card-slot combination\n\nBoard size limits how many connections can be provided without increasing board layer stack. This prevents inclusion of all PIA IO (requires another 20+ connections)\n\nRegular ports are placed on main board and wired to backplane where possible, for joysticks this is a compromise achieved by a separate link block to carry axis and buttons\n\nVideo output is shipped on the first few pins of the backplane and arranged to provide separation and protection from other signals"
 		(exclude_from_sim no)
-		(at 233.68 13.97 0)
-		(size 48.26 34.29)
+		(at 234.95 76.2 0)
+		(size 48.26 44.45)
 		(stroke
 			(width 0)
 			(type default)
@@ -3627,7 +3625,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "dd1d0928-c64b-4e49-ba5d-5dda15012e03")
+		(uuid "ca4b3019-098d-487a-bfd4-16c571c6fbd5")
 	)
 	(label "Joystick +V"
 		(at 166.37 49.3521 0)
