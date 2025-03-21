@@ -21,11 +21,11 @@
       "keepouts": true,
       "lockedItems": true,
       "otherItems": true,
-      "pads": false,
+      "pads": true,
       "text": true,
       "tracks": true,
       "vias": true,
-      "zones": false
+      "zones": true
     },
     "visible_items": [
       0,
@@ -64,7 +64,7 @@
       39,
       40
     ],
-    "visible_layers": "807ffff_ffffffff",
+    "visible_layers": "807fff3_ffffffff",
     "zone_display_mode": 0
   },
   "git": {

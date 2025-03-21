@@ -5369,7 +5369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=108-98010&DocType=Specification%20Or%20Standard&DocLang=English&DocFormat=pdf&PartCntxt=3-1393779-3"
 			(at 57.15 85.598 0)
 			(effects
 				(font
@@ -5379,6 +5379,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 57.15 85.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "PB1623-ND"
 			(at 57.15 85.598 0)
 			(effects
 				(font

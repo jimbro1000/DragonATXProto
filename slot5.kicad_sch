@@ -8316,6 +8316,50 @@
 			)
 		)
 	)
+	(global_label "~{HS}"
+		(shape bidirectional)
+		(at 101.6 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "07adc7d0-96b4-45e1-b442-6e0de7d26ec0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 108.2365 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{FS}"
+		(shape bidirectional)
+		(at 88.9 92.71 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "082ca317-1e9d-4e11-9bd3-0e3b9923fcec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 82.5054 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MOTOR"
 		(shape bidirectional)
 		(at 88.9 102.87 180)
@@ -8580,28 +8624,6 @@
 			)
 		)
 	)
-	(global_label "AD1"
-		(shape bidirectional)
-		(at 88.9 57.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2478b96d-7865-4e01-8430-b8b2e622bf16")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.2354 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Z13"
 		(shape bidirectional)
 		(at 101.6 135.89 0)
@@ -8664,28 +8686,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "TSC"
-		(shape bidirectional)
-		(at 88.9 87.63 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2e246403-cef3-4a15-bf67-5a9ce171c80e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.3564 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -8800,6 +8800,28 @@
 			)
 		)
 	)
+	(global_label "AVMA"
+		(shape bidirectional)
+		(at 88.9 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "413a3c92-a6c0-402e-b2a0-d268f1ccde61")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.0863 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "A5"
 		(shape bidirectional)
 		(at 168.91 114.3 180)
@@ -8862,28 +8884,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "AVMA"
-		(shape bidirectional)
-		(at 88.9 90.17 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "45984dfe-283b-467e-a486-996b7289be94")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.0863 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -9328,6 +9328,28 @@
 			)
 		)
 	)
+	(global_label "DA0"
+		(shape bidirectional)
+		(at 88.9 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "76bb70af-e71b-4e9f-a3b1-cb691acf9901")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.2354 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D2"
 		(shape bidirectional)
 		(at 181.61 111.76 0)
@@ -9746,28 +9768,6 @@
 			)
 		)
 	)
-	(global_label "AD2"
-		(shape bidirectional)
-		(at 101.6 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a6f87883-f1ef-4c28-a831-0c3d6f92d64f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.2646 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Z19"
 		(shape bidirectional)
 		(at 101.6 151.13 0)
@@ -9786,28 +9786,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CPU_BUSY"
-		(shape bidirectional)
-		(at 88.9 92.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "aa488e52-0082-42f7-92cd-5901a2400182")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 75.0668 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -9957,6 +9935,28 @@
 		(uuid "beef3514-e262-4f66-b0ed-0c1946c761f8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 80.8726 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CPU_BUSY"
+		(shape bidirectional)
+		(at 88.9 87.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c116d640-0227-495d-878d-d98189d4afda")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 75.0668 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10160,6 +10160,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TSC"
+		(shape bidirectional)
+		(at 88.9 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3e0d50f-0096-4e23-8ccd-8cfa9cfb2360")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.3564 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -10375,28 +10397,6 @@
 		(uuid "fc2b9efd-ef94-4fe4-ab09-b2f1d8150ef6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 83.473 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LIC"
-		(shape bidirectional)
-		(at 88.9 85.09 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ffd31b0e-3065-4738-b79f-7bfb74fe60ac")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.9006 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)

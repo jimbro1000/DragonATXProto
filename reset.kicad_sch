@@ -1202,7 +1202,7 @@
 		)
 		(uuid "f504e4c4-fa68-4cd1-9b60-3bd8d60df433")
 	)
-	(global_label "~{RES}"
+	(global_label "~{RESET}"
 		(shape input)
 		(at 113.03 86.36 180)
 		(fields_autoplaced yes)
@@ -1214,12 +1214,12 @@
 		)
 		(uuid "3404575e-2a9f-4c01-baab-86b798c7ea7a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.0772 86.4394 0)
+			(at 104.2997 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
